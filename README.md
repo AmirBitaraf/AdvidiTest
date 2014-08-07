@@ -4,25 +4,25 @@ This is a sample web-application which serves banners for an advertising agency.
 It renders banners based on their revenue-performance for each campaign.
 You can use it by simply opening **/campaigns/{campaign id}/** web page.
 
-Setting up dev machine
+Setting up the dev machine
 ----------
-This web-app is written using Python-Django and PostgreSQL as database. It has the flexiblity to change the database whenever you want.
+This web-app is written using Python-Django and uses PostgreSQL but you can change the database server whenever you desire.
 
-To setup the development environment you must have "python" and "postgresql" installed on your machine. You can setup a virtual environment and use "foreman" in order to make management easier.
+To setup the development environment you must have "python" and "postgresql" installed on your machine. You can setup a virtual environment and use "foreman" to make management easier.
 
-So the only thing you need to do is to download python requirements using "pip". They are all available in "requirements.txt" file. Also there is another file called "migratedb.py" which imports all raw data from CSV files.
+The only thing you need to do is download the python requirements using "pip". They are listed in "requirements.txt". Also there is another file, "migratedb.py", which imports all raw data from CSV files.
 
-To run the server you can simply type ```foreman start web```
+To run the server you can simply run ```foreman start web```
 
-[Lettuce] is used for testing. You can simply add your features to the "features" directory and test using ```lettuce ```.
+[Lettuce] is used for testing. You can add your features to the "features" directory and test using ```lettuce ```.
 
 
-About Development Process
+About the Development Process
 ---------
-The development of this web-app is Test-Driven in which we write tests before coding. App is also flexible to any changes made in future. Also we used one of the best possible indexing and optimizations in database in order to handle requests as much as possible.
+The development of this web-app is Test-Driven i.e. we write tests before coding. The app is flexible and can be changed easily. We also used some of the best possible indexing and optimization techniques in the database in order to handle as many requests as possible.
 
-The migration code here imports raw CSV files into the "impressions" table which is indexed carefully so each query will have time complexity O(lgn) on height of created B-Tree at most.
-And by using at most three queries We can now serve up to 9k requests per minute. This result is based on the stress test made using ```siege ```. You can see its output below
+The migration code imports the raw CSV files into the "impressions" table which is indexed so that each query will have time complexity O(lgn) based on the height of the created B-Tree.
+And by using at most three queries We can now serve up to 9k requests per minute. This result is based on the stress test done using ```siege ```. You can see its output below
 
 
 ```
@@ -41,11 +41,10 @@ Longest transaction:	        0.45
 Shortest transaction:	        0.08
 ```
 
-Also we save all other datas from CSV files so that it can be used for logging or other purposes later.
+We save all the other data from the CSV files so that it can be used for logging or other purposes later.
 
-At the Client-Level we used HTML5,CSS3 and jQuery to make an animated page so it can attract users' eyes.
+At the Client-Level we used HTML5, CSS3 and jQuery to create an animated page that would be pleasing to the users' eyes.
 
 
 
 [Lettuce]:http://lettuce.it/
-
