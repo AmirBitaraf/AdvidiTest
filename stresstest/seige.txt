@@ -1,0 +1,19 @@
+sudo siege -t60s -b -c50 -f urls.txt
+** SIEGE 3.0.5
+** Preparing 50 concurrent users for battle.
+The server is now under siege...
+Lifting the server siege...      done.
+
+Transactions:		        9010 hits
+Availability:		      100.00 %
+Elapsed time:		       59.45 secs
+Data transferred:	        2.84 MB
+Response time:		        0.33 secs
+Transaction rate:	      151.56 trans/sec
+Throughput:		        0.05 MB/sec
+Concurrency:		       49.86
+Successful transactions:        9010
+Failed transactions:	           0
+Longest transaction:	        0.45
+Shortest transaction:	        0.08
+
