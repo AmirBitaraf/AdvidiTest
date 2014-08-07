@@ -7,4 +7,6 @@ urlpatterns = patterns('',
 		(r'^campaigns/(?P<campaign_id>\d+)',campaigns),
 )
 
-urlpatterns += staticfiles_urlpatterns()
+urlpatterns += patterns('',
+        (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+    )
