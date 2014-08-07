@@ -40,10 +40,10 @@ ul {
 }
 
 ul li {
-	display:inline-block;
+	display:block;
 	width:0%;
 	z-index:0;
-	margin:2.5% 0 0 2.5%;
+	margin:5% 0% 0 0%;
 	position:relative;
 	-moz-transition:all 0.6s ease;
 	-webkit-transition:all 0.6s ease;
@@ -54,7 +54,8 @@ ul li {
 
 ul li img {
 	max-width:100%;
-	float:left;
+	width: 100%;
+	/*float:left;*/
 	border:2px solid #eee;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;

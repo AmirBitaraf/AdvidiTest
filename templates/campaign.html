@@ -11,12 +11,12 @@
     <body>
 	<h1>Campaign Banners</h1>
         <div>
-			<ul class="gal">
-			    {% for item in query %}
-				    <li><img src="{% static 'images/image_' %}{{item.banner_id}}.png" alt=""></li>			
-			    {% endfor %}
-	    </ul>
-	</div>
+		    <ul class="gal">
+				<div align="center">
+	        	    <li><img src="{% static 'images/image_' %}{{banner_id}}.png" alt=""></li>			
+				</div>
+	        </ul>
+		</div>
     </body>
 </html>
 

@@ -1,5 +1,12 @@
 $(document).ready(function(){
-	$("li").each(function(){
-		$(this).width('22%')
-	});
+	animate();
 });
+
+
+
+function animate()
+{
+	$("li").each(function(){
+		$(this).width('40%')
+	});
+}
