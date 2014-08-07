@@ -1,6 +1,6 @@
 Advidi Test
 ==========
-This is a sample web-application which serves banners for an advertising agency.
+This is a simple web-application which serves banners for an advertising agency.
 It renders banners based on their revenue-performance for each campaign.
 You can use it by simply opening **/campaigns/{campaign id}/** web page.
 
